@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Note</title>
+</head>
+<body>
+    <h1>Add Note</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.content.label }}<br>
+            {{ form.content(cols=40, rows=10) }}
+        </p>
+        <p><input type="submit" value="Add Note"></p>
+    </form>
+    <a href="{{ url_for('index') }}">Back to home</a>
+</body>
+</html>
