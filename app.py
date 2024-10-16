@@ -84,4 +84,4 @@ def report():
     return render_template('report.html', tickets=tickets, alerts=alerts, incidents=incidents, notes=notes)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
