@@ -1,4 +1,5 @@
 
+Werkzeug==2.2.3
 Flask==2.3.2
 Flask-SQLAlchemy==3.0.4
 mysqlclient==2.1.1  # or use pymysql if preferred: pymysql==1.0.3
