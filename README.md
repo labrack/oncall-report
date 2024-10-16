@@ -62,8 +62,11 @@ After setting up MySQL and configuring the connection string, initialize the dat
 
 ```bash
 python
->>> from app import db
->>> db.create_all()
+>>> from app import app, db
+>>>
+>>> with app.app_context():
+...     db.create_all()
+...
 >>> exit()
 ```
 
