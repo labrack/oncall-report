@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Report</title>
+</head>
+<body>
+    <h1>Weekly Report</h1>
+    
+    <h2>Tickets</h2>
+    <ul>
+        {% for ticket in tickets %}
+        <li><a href="{{ ticket.url }}">{{ ticket.url }}</a> - {{ ticket.status }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Alerts</h2>
+    <ul>
+        {% for alert in alerts %}
+        <li>{{ alert.alert_file }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Incidents</h2>
+    <ul>
+        {% for incident in incidents %}
+        <li>{{ incident.description }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Notes</h2>
+    <ul>
+        {% for note in notes %}
+        <li>{{ note.content }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
