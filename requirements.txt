@@ -1,6 +1,6 @@
 Flask==2.3.3
 Flask-SQLAlchemy==3.0.4
-Flask-WTF==1.2.1  # or the latest version
+Flask-WTF==1.2.1
 mysqlclient==2.1.1
 Werkzeug>=2.3.7
 pymysql
