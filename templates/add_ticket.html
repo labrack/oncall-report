@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Ticket</title>
+</head>
+<body>
+    <h1>Add Ticket</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.url.label }} {{ form.url(size=40) }}<br>
+        {{ form.status.label }} {{ form.status() }}<br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
