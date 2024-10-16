@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Incident</title>
+</head>
+<body>
+    <h1>Add Incident</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.description.label }}<br>
+            {{ form.description(size=64) }}
+        </p>
+        <p>
+            {{ form.relevant.label }}<br>
+            {{ form.relevant() }}
+        </p>
+        <p><input type="submit" value="Add Incident"></p>
+    </form>
+    <a href="{{ url_for('index') }}">Back to home</a>
+</body>
+</html>
